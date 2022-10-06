@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body style="background-color: #ffffff;">
+
+  <div class="signin-container">
+    <div class="signin-img">
+      <img src="img/signup-img.png" alt="">
+    </div>
+    <div class="signin-form">
+      <div class="form">
+        <div class="form-heading margin-70">
+          <h3>Sign up <span>to continue</span></h3>
+        </div>
+        <form action="">
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" id="passwordInput" class="form-control" />
+            <img src="img/eye-icon.png" class="view-password-icon" onclick="viewPassword()" alt="Eye Icon" />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Confirm Password" id="cPasswordInput" class="form-control" />
+            <img src="img/eye-icon.png" class="view-password-icon" onclick="viewCPassword()" alt="Eye Icon" />
+          </div>
+          <div class="term-policy-checkbox">
+            <label><input type="checkbox" name="" /> Terms and Policies</label>
+          </div>
+          <div class="signin-btn">
+            <button type="submit">Sign Up</button>
+          </div>
+          <div class="or-text">
+            <h3><span>Or</span></h3>
+          </div>
+          <div class="signup-social-btns">
+            <button class="width-48"><img src="img/fb-icon.png" alt="Facebook Icon">Facebook
+            </button>
+            <button class="go-btn width-48"><img src="img/go-icon.png" alt="Google Icon">Google
+            </button>
+          </div>
+          <div class="not-member-link">
+            <a href="signin.html">Already a member?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+	<script src="js/main.js"></script>
+  <script>
+    function viewPassword() {
+      var x = document.getElementById("passwordInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    function viewCPassword() {
+      var x = document.getElementById("cPasswordInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+</body>
+</head>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body style="background-color: #ffffff;">
+
+  <div class="signin-container">
+    <div class="signin-img">
+      <img src="img/signin-img.png" alt="">
+    </div>
+    <div class="signin-form">
+      <div class="heading">
+        <h1>Designer X</h1>
+      </div>
+      <div class="form">
+        <div class="form-heading">
+          <h3>Sign in <span>to continue</span></h3>
+        </div>
+        <form action="">
+          <div class="form-group">
+            <input type="email" placeholder="Email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" id="passwordInput" class="form-control" />
+            <img src="img/eye-icon.png" class="view-password-icon" onclick="viewPassword()" alt="Eye Icon" />
+          </div>
+          <div class="forgot-password-link">
+            <a href="#">Forgot Password ?</a>
+          </div>
+          <div class="signin-btn">
+            <button type="submit">Sign In</button>
+          </div>
+          <div class="or-text">
+            <h3><span>Or</span></h3>
+          </div>
+          <div class="social-btns">
+            <button><img src="img/fb-icon.png" alt="Facebook Icon">Login with Facebook
+            </button>
+            <button class="go-btn"><img src="img/go-icon.png" alt="Google Icon">Login with Google
+            </button>
+          </div>
+          <div class="not-member-link">
+            <a href="signup.html">Not a member?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+	<script src="js/main.js"></script>
+  <script>
+    function viewPassword() {
+      var x = document.getElementById("passwordInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+</body>
+</head>
