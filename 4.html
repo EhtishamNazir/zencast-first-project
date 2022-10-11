@@ -325,6 +325,103 @@
 </div>
 <!-- Wrapper Section Ends -->
 
+<!-- Create New Modal Starts -->
+<!-- The Modal -->
+<div id="create-new" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1>Create <span>New Document</span></h1>
+      <div class="action-btns">
+        <button><img src="img/chrome-minimize.png" alt=""></button>
+        <button><img src="img/window-minimize.png" alt=""></button>
+        <button><img src="img/close-icon.png" alt=""></button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-body-left">
+        <div class="modes-btns">
+          <label class="modes-btns-wrapper">Facebook
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Instagram
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Twitter
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Snapchat
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-body-right">
+        <!-- Image Size and Form Section Starts -->
+        <div class="image-size-form">
+          <div class="image-size">
+            <div class="heading"><p>Size</p></div>
+            <div class="img"><img src="img/grey.png" alt=""></div>
+            <div class="size-text">1080 X 1920</div>
+          </div>
+          <div class="form">
+            <input class="form-control" type="text" placeholder="Company Name" />
+            <div class="upload-btn">
+              <label>
+                <img src="img/plus-2.png" alt=""><br /> 
+                <span>Upload Logo</span>
+                <input type="file" size="60" >
+              </label> 
+            </div>
+          </div>
+        </div>
+        <!-- Image Size and Form Section Ends -->
+        <!-- Information Section Starts -->
+        <div class="information-wrapper" style="justify-content: flex-end;">
+          <div class="open-create-btns">
+            <button>Download</button>
+            <button>Customize</button>
+          </div>
+        </div>
+        <!-- Information Section Ends -->
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Create New Modal Ends -->
+
 	<script src="js/main.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("create-new");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </head>

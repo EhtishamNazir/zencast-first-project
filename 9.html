@@ -325,6 +325,149 @@
 </div>
 <!-- Wrapper Section Ends -->
 
+<!-- Create New Modal Starts -->
+<!-- The Modal -->
+<div id="create-new" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="padding: 0;">
+    <div class="modal-bg">
+      <div class="modal-header" style="justify-content: flex-end;">
+        <div class="action-btns">
+          <button><img src="img/chrome-minimize.png" alt=""></button>
+          <button><img src="img/window-minimize.png" alt=""></button>
+          <button><img src="img/close-icon.png" alt=""></button>
+        </div>
+      </div>
+      <div class="sub-heading">
+        <p>Choose a plan <span>tailored your needs</span></p>
+      </div>
+      <div class="switch-btn">
+        <p class="monthly-text">Monthly</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p class="yearly-text">Yearly</p>
+        </p>
+      </div>
+      <div class="modal-body">
+        <div class="price-items">
+          <div class="price-item">
+            <p class="plan-name">New Moon</p>
+            <p class="plan-for">Best to get started</p>
+            <p class="price">$16<span>/Month</span></p>
+            <div class="try-btn">
+              <button>Try 7 days for free</button>
+            </div>
+            <hr />
+            <div class="features">
+              <p class="heading">Includes</p>
+              <ul class="features-list">
+                <li><img src="img/tick.png" alt="">Feature 1</li>
+                <li><img src="img/tick.png" alt="">Feature 2</li>
+                <li><img src="img/tick.png" alt="">Feature 3</li>
+              </ul>
+              <div class="see-features-btn">
+                <button>See All Features</button>
+              </div>
+            </div>
+          </div>
+          <div class="price-item">
+            <p class="plan-name">Crescent</p>
+            <p class="plan-for">Professional Choice</p>
+            <p class="price">$25<span>/Month</span></p>
+            <div class="try-btn">
+              <button>Try 7 days for free</button>
+            </div>
+            <hr />
+            <div class="features">
+              <p class="heading">Includes</p>
+              <ul class="features-list">
+                <li><img src="img/tick.png" alt="">Feature 1</li>
+                <li><img src="img/tick.png" alt="">Feature 2</li>
+                <li><img src="img/tick.png" alt="">Feature 3</li>
+              </ul>
+              <div class="see-features-btn">
+                <button>See All Features</button>
+              </div>
+            </div>
+          </div>
+          <div class="price-item">
+            <p class="plan-name">Half Moon</p>
+            <p class="plan-for">New Enterprises</p>
+            <p class="price">$30<span>/Month</span></p>
+            <div class="try-btn">
+              <button>Try 7 days for free</button>
+            </div>
+            <hr />
+            <div class="features">
+              <p class="heading">Includes</p>
+              <ul class="features-list">
+                <li><img src="img/tick.png" alt="">Feature 1</li>
+                <li><img src="img/tick.png" alt="">Feature 2</li>
+                <li><img src="img/tick.png" alt="">Feature 3</li>
+              </ul>
+              <div class="see-features-btn">
+                <button>See All Features</button>
+              </div>
+            </div>
+          </div>
+          <div class="price-item active">
+            <p class="plan-name">Full Moon</p>
+            <p class="plan-for">Enterprizes</p>
+            <p class="price">$50<span>/Month</span></p>
+            <div class="try-btn">
+              <button>Try 7 days for free</button>
+            </div>
+            <hr />
+            <div class="features">
+              <p class="heading">Includes</p>
+              <ul class="features-list">
+                <li><img src="img/tick.png" alt="">Feature 1</li>
+                <li><img src="img/tick.png" alt="">Feature 2</li>
+                <li><img src="img/tick.png" alt="">Feature 3</li>
+              </ul>
+              <div class="see-features-btn">
+                <button>See All Features</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Create New Modal Ends -->
+
 	<script src="js/main.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("create-new");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </head>

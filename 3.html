@@ -325,6 +325,106 @@
 </div>
 <!-- Wrapper Section Ends -->
 
+<!-- Create New Modal Starts -->
+<!-- The Modal -->
+<div id="create-new" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1>Create <span>New Document</span></h1>
+      <div class="action-btns">
+        <button><img src="img/chrome-minimize.png" alt=""></button>
+        <button><img src="img/window-minimize.png" alt=""></button>
+        <button><img src="img/close-icon.png" alt=""></button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-body-left">
+        <div class="modes-btns">
+          <label class="modes-btns-wrapper">General
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Social
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Print
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Web
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="modes-btns-wrapper">Custom
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-body-right">
+        <!-- Image Sizes Section Starts -->
+        <div class="image-sizes">
+          <div class="sm-wrapper">
+            <div class="sm"></div>
+          </div>
+          <div class="md-wrapper">
+            <div class="md"></div>
+          </div>
+          <div class="lg-wrapper">
+            <div class="lg"></div>
+          </div>
+        </div>
+        <!-- Image Sizes Section Ends -->
+        <!-- Information Section Starts -->
+        <div class="information-wrapper">
+          <div class="information">
+            <p class="heading">Information</p>
+            <p class="width-height">Width: 1080</p>
+            <p class="width-height">Height: 1080</p>
+          </div>
+          <div class="open-create-btns">
+            <button>Open</button>
+            <button>Create</button>
+          </div>
+        </div>
+        <!-- Information Section Ends -->
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Create New Modal Ends -->
+
 	<script src="js/main.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("create-new");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </head>

@@ -236,17 +236,125 @@
     <!-- Editable Image Section Ends -->
     <!-- Main Tool Wrapper Section Starts -->
     <div class="main-tools-wrapper">
-      <div class="most-used-tools">
+      <div class="filters">
         <div class="heading">
-          <p>Most Used Tools</p>
+          <p>Filters</p>
         </div>
-        <div class="tools-wrapper">
-          <button><img src="img/icon-5.png" alt="Cursor Icon"></button>
-          <button><img src="img/bx_crop.png" alt="Icon"></button>
-          <button><img src="img/clarity_color-picker-solid.png" alt="Cursor Icon"></button>
-          <button><img src="img/lucide_type.png" alt="Icon"></button>
-          <button><img src="img/mdi_lasso.png" alt="Icon"></button>
+        <!-- Filters Wrapper Starts -->
+        <div class="filters-wrapper">
+          <!-- Filter Slider Starts -->
+          <div id="filter-slider">
+            <!-- Right and Left Arrows Starts -->
+            <button class='arrow prev'></button>
+            <button class='arrow next'></button>
+            <!-- Right and Left Arrows Ends -->
+            <div class="filter-slider-frame">
+              <!-- Filter Items Starts -->
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay"></div>
+                    </div>
+                    <footer class="hmt small">None</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay sepia"></div>
+                    </div>
+                    <footer class="hmt small">Dramatic Sepia</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay blue"></div>
+                    </div>
+                    <footer class="hmt small">Blue Evening</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay nightmare"></div>
+                    </div>
+                    <footer class="hmt small">Nightmare</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay vintage"></div>
+                    </div>
+                    <footer class="hmt small">Vintage</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay other"></div>
+                    </div>
+                    <footer class="hmt small">Other Filter</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay other"></div>
+                    </div>
+                    <footer class="hmt small">Other Filter</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay other"></div>
+                    </div>
+                    <footer class="hmt small">Other Filter</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-slider-item">
+                <div class="filter-slider-inset">
+                  <div class="filter">
+                    <div class="filter-img">
+                      <img src="img/filter-img-1.png">
+                      <div class="overlay other"></div>
+                    </div>
+                    <footer class="hmt small">Other Filter</footer>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter Items Ends -->
+            </div>
+          </div>
+          <!-- Filter Slider Ends -->
         </div>
+        <!-- Filters Wrapper Ends -->
       </div>
     </div>
     <!-- Main Tool Wrapper Section Ends -->
@@ -326,5 +434,95 @@
 <!-- Wrapper Section Ends -->
 
 	<script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Filters Slider Script -->
+  <script>
+    function defer(method) {
+      if (window.jQuery)
+        method();
+      else
+        setTimeout(function() {
+          defer(method)
+        }, 50);
+    }
+    defer(function() {
+      (function($) {
+        
+        function doneResizing() {
+          var totalScroll = $('.filter-slider-frame').scrollLeft();
+          var itemWidth = $('.filter-slider-item').width();
+          var difference = totalScroll % itemWidth;
+          if ( difference !== 0 ) {
+            $('.filter-slider-frame').animate({
+              scrollLeft: '-=' + difference
+            }, 500, function() {
+              // check arrows
+              checkArrows();
+            });
+          }
+        }
+        
+        function checkArrows() {
+          var totalWidth = $('#filter-slider .filter-slider-item').length * $('.filter-slider-item').width();
+          var frameWidth = $('.filter-slider-frame').width();
+          var itemWidth = $('.filter-slider-item').width();
+          var totalScroll = $('.filter-slider-frame').scrollLeft();
+          
+          if ( ((totalWidth - frameWidth) - totalScroll) < itemWidth ) {
+            $(".next").css("visibility", "hidden");
+          }
+          else {
+            $(".next").css("visibility", "visible");
+          }
+          if ( totalScroll < itemWidth ) {
+            $(".prev").css("visibility", "hidden");
+          }
+          else {
+            $(".prev").css("visibility", "visible");
+          }
+        }
+        
+        $('.arrow').on('click', function() {
+          var $this = $(this),
+            width = $('.filter-slider-item').width(),
+            speed = 500;
+          if ($this.hasClass('prev')) {
+            $('.filter-slider-frame').animate({
+              scrollLeft: '-=' + width
+            }, speed, function() {
+              // check arrows
+              checkArrows();
+            });
+          } else if ($this.hasClass('next')) {
+            $('.filter-slider-frame').animate({
+              scrollLeft: '+=' + width
+            }, speed, function() {
+              // check arrows
+              checkArrows();
+            });
+          }
+        }); // end on arrow click
+        
+        $(window).on("load resize", function() {
+          checkArrows();
+          $('#filter-slider .filter-slider-item').each(function(i) {
+            var $this = $(this),
+              left = $this.width() * i;
+            $this.css({
+              left: left
+            })
+          }); // end each
+        }); // end window resize/load
+        
+        var resizeId;
+        $(window).resize(function() {
+            clearTimeout(resizeId);
+            resizeId = setTimeout(doneResizing, 500);
+        });
+        
+      })(jQuery); // end function
+    });
+  </script>
 </body>
 </head>
