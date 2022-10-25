@@ -8,8 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style2.css">
 <body>
@@ -22,17 +20,46 @@
         <img src="img/logo.png" alt="Logo" />
       </div>
       <div class="navbar-links-wrapper">
-        <ul class="navbar-links">
-          <li><a href="#">file</a></li>
-          <li><a href="#">edit</a></li>
-          <li><a href="#">image</a></li>
-          <li><a href="#">layer</a></li>
-          <li><a href="#">select</a></li>
-          <li><a href="#">filter</a></li>
-          <li><a href="#">view</a></li>
-          <li><a href="#">window</a></li>
-          <li><a href="#">help</a></li>
-        </ul>
+        <div class="btns">
+          <button><img src="img/icon-1.png" alt="Icon" /></button>
+          <button><img src="img/icon-2.png" alt="Icon" /></button>
+          <button><img src="img/icon-3.png" alt="Icon" /></button>
+          <button><img src="img/icon-4.png" alt="Icon" /></button>
+        </div>
+        <!-- Width and Height Fields Starts -->
+        <div class="width-height ml-3 mr-2">
+          <form action="">
+            <div class="width-height-fields">
+              <label for="">Width:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+            <div class="width-height-fields ml-2">
+              <label for="">Height:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+          </form>
+        </div>
+        <!-- Width and Height Fields Starts -->
+        <!-- Opacity Select Starts -->
+        <div class="custom-select">
+          <select>
+            <option value="0">Opacity: 1</option>
+            <option value="1">Opacity: 2</option>
+            <option value="2">Opacity: 3</option>
+            <option value="3">Opacity: 4</option>
+            <option value="4">Opacity: 5</option>
+            <option value="5">Opacity: 6</option>
+            <option value="6">Opacity: 7</option>
+            <option value="7">Opacity: 8</option>
+            <option value="8">Opacity: 9</option>
+            <option value="9">Opacity: 10</option>
+          </select>
+        </div>
+        <!-- Opacity Select Ends -->
       </div>
       <div class="action-btns-wrapper">
         <div class="action-btns">
@@ -43,43 +70,50 @@
       </div>
     </div>
     <div class="tools-subtools">
-      <div class="empty-space"></div>
-      <div class="subtools-wrapper">
-        <div class="subtools">
-          <button><img src="img/icon-1.png" alt="Icon 1" /></button>
-          <button><img src="img/icon-2.png" alt="Icon 2" /></button>
-          <button><img src="img/icon-3.png" alt="Icon 3" /></button>
-          <button><img src="img/icon-4.png" alt="Icon 4" /></button>
-        </div>
-        <div class="divider ml-1">
-          <div class="width-height pl-3">
-            <form action="">
-              <div class="width-height-fields">
-                <label for="">Width:</label>
-                <span class="number-wrapper">
-                  <input type="number" />
-                </span>
-              </div>
-              <div class="width-height-fields">
-                <label for="">Height:</label>
-                <span class="number-wrapper">
-                  <input type="number" />
-                </span>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="divider ml-1"></div>
-      </div>
-      <div class="subtools-action-btns-wrapper">
-        <div class="custom-select">
+      <!-- Typo Icons Starts -->
+      <div class="typo-btns">
+        <button><img src="img/typo-icon-1.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-2.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-3.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-4.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-5.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-6.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-7.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-8.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-9.png" alt="Typo icon" /></button>
+        <!-- Font Families and Font Styles Custom Select Starts -->
+        <div class="custom-select mr-3" style="width:100px;">
           <select>
-            <option value="0">Essential</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
+            <option value="0">Poppins</option>
+            <option value="1">Time New Roman</option>
+            <option value="2">Verdana</option>
+            <option value="2">Arial</option>
+            <option value="2">Railway</option>
+            <option value="2">Fancy</option>
+            <option value="2">Cursive</option>
           </select>
         </div>
+        <div class="custom-select mr-3" style="width:100px;">
+          <select>
+            <option value="0">Bold</option>
+            <option value="1">Italic</option>
+            <option value="2">Normal</option>
+          </select>
+        </div>
+        <!-- Font Families and Font Styles Custom Select Ends -->
+        <button><img src="img/typo-icon-10.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-11.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-12.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-13.png" alt="Typo icon" /></button>
       </div>
+      <!-- Typo Icons Ends -->
+      <!-- Actions Section Starts -->
+      <div class="actions">
+        <button><img src="img/plus-green.png" alt="Icon" /></button>
+        <button><img src="img/bi_clock-history.png" alt="Icon" /></button>
+        <button><img src="img/cog-2.png" alt="Icon" /></button>
+      </div>
+      <!-- Actions Sections Ends -->
     </div>
   </div>
 </div>
@@ -113,7 +147,7 @@
     </div>
     <!-- Layers Section Starts -->
     <div class="layers-wrapper">
-      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+      <div class="layer" style="background-image: url('img/filter-img-2.png');">
         <button class="accordion">
           <span>Layer 1:</span>
           <span><img src="img/icon-23.png" alt="Icon" /></span>
@@ -123,7 +157,7 @@
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+      <div class="layer" style="background-image: url('img/filter-img-2.png');">
         <button class="accordion">
           <span>Layer 2:</span>
           <span>
@@ -136,7 +170,7 @@
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+      <div class="layer" style="background-image: url('img/filter-img-2.png');">
         <button class="accordion">
           <span>Layer 3:</span>
             <span>
@@ -149,7 +183,7 @@
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+      <div class="layer" style="background-image: url('img/filter-img-2.png');">
         <button class="accordion">
           <span>Layer 4:</span>
           <span>
@@ -161,7 +195,7 @@
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+      <div class="layer" style="background-image: url('img/filter-img-2.png');">
         <button class="accordion active">
           <span>Layer 5:</span>
             <span>
@@ -192,11 +226,10 @@
     </div>
     <!-- Editable Image Section Starts -->
     <div class="working-area-img-wrapper">
-      <img src="img/img-1.png" alt="Image" />
+      <img src="img/img-2.png" alt="Image" />
     </div>
     <!-- Editable Image Section Ends -->
 
-    <!-- Working Area Tools Wrapper Starts -->
     <div class="working-area-tools-wrapper">
       <div class="filters">
         <div class="heading">
@@ -216,7 +249,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay"></div>
                     </div>
                     <footer class="hmt small">None</footer>
@@ -227,7 +260,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay sepia"></div>
                     </div>
                     <footer class="hmt small">Dramatic Sepia</footer>
@@ -238,7 +271,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay blue"></div>
                     </div>
                     <footer class="hmt small">Blue Evening</footer>
@@ -249,7 +282,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay nightmare"></div>
                     </div>
                     <footer class="hmt small">Nightmare</footer>
@@ -260,7 +293,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay vintage"></div>
                     </div>
                     <footer class="hmt small">Vintage</footer>
@@ -271,7 +304,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay other"></div>
                     </div>
                     <footer class="hmt small">Other Filter</footer>
@@ -282,7 +315,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay other"></div>
                     </div>
                     <footer class="hmt small">Other Filter</footer>
@@ -293,7 +326,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay other"></div>
                     </div>
                     <footer class="hmt small">Other Filter</footer>
@@ -304,7 +337,7 @@
                 <div class="filter-slider-inset">
                   <div class="filter">
                     <div class="filter-img">
-                      <img src="img/filter-img-1.png">
+                      <img src="img/filter-img-2.png">
                       <div class="overlay other"></div>
                     </div>
                     <footer class="hmt small">Other Filter</footer>
@@ -319,23 +352,16 @@
         <!-- Filters Wrapper Ends -->
       </div>
     </div>
-    <!-- Working Area Tools Wrapper Ends -->
   </div>
   <!-- Working Section Starts -->
 
   <!-- Right Sidebar Section Starts -->
   <div class="right-sidebar">
-    <div class="right-sidebar-header">
-      <button><img src="img/bi_clock-history.png" alt="Clock Icon" /></button>
-      <!-- <button><img src="img/cog.png" alt="Setting Icon" /></button> -->
+    <div class="right-sidebar-header justify-content-end">
       <button><img src="img/user.png" alt="User Image" /></button>
     </div>
     <div class="toolbar-wrapper">
       <div class="tools inner-shadow">
-        <div class="tools-header">
-          <button><img src="img/plus.png" alt="Plus Icon" /></button>
-          <button><img src="img/cog.png" alt="Setting Icon" /></button>
-        </div>
         <div class="tools-body">
           <div class="tools-body-item">
             <button><img src="img/icon-5.png" alt="Icon" /></button>
@@ -388,14 +414,11 @@
       <div class="modes-heading">
         <h4>modes</h4>
       </div>
-      <div class="modes-btns-wrapper">
-        <label class="radio-btns-wrapper">Simple
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="radio-btns-wrapper">Advanced
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
+      <div class="mode-btn-wrapper">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+          <img class="lock-icon" src="img/lock-icon.png" alt="Lock Icon" />
         </label>
       </div>
     </div>
@@ -403,8 +426,8 @@
   <!-- Right Sidebar Section Ends -->
 </div>
 <!-- Main Wrapper Section Ends -->
-
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="js/main.js"></script>  
 </body>
 </head>

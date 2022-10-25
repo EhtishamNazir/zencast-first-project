@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/component-styles.css">
+	<title>Components</title>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Width Height Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">1# Height & Width Input Component</h1>
+			<div class="width-height">
+			  <form action="">
+			    <div class="width-height-fields">
+			      <label for="">Width:</label>
+			      <span class="number-wrapper">
+			        <input type="number" />
+			      </span>
+			    </div>
+			    <div class="width-height-fields">
+			      <label for="">Height:</label>
+			      <span class="number-wrapper">
+			        <input type="number" />
+			      </span>
+			    </div>
+			  </form>
+			</div>
+		</div>
+		<!-- Width Height Component Ends -->
+
+		<!-- Custom Select Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">2# Custom Select Component</h1>
+			<div class="custom-select">
+			  <select>
+			    <option value="0">Essential</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			  </select>
+			</div>
+		</div>
+		<!-- Custom Select Component Ends -->
+
+		<!-- Dropdown Button Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">3# Dropdown Button Component</h1>
+			<div class="dropdown">
+			  <button class="outer-shadow" onclick="showDropdownContent()">
+			  	<img src="img/caret-down.png" alt="Caret Icon" />
+			  </button>
+			  <div class="dropdown-content inner-shadow" id="dropdown-content">
+			    <button>Move Layer</button>
+			    <button>Merge Layer</button>
+			    <button>Arrange Layer</button>
+			    <button>Selected Layer</button>
+			  </div>
+			</div>
+		</div>	
+		<!-- Dropdown Button Component Ends -->
+
+		<!-- Range Slider Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">4# Range Slider Component</h1>
+			<div class="range-slider">
+			  <input class="range-slider__range" type="range" value="100" min="0" max="500">
+			  <span class="range-slider__value">100</span>
+			</div>
+		</div>
+		<!-- Range Slider Component Ends -->
+
+		<!-- Search Bar Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">5# Search Bar Component</h1>
+			<div class="search-bar">
+			  <input type="text" class="inner-shadow" placeholder="Search" />
+			  <button class="submit-btn"><img src="img/search-icon.png" alt="Search Icon" /></button>
+			</div>
+		</div>
+		<!-- Search Bar Component Ends -->
+
+		<!-- Search Bar Component Starts -->
+		<div class="row">
+			<h1 class="component-heading">6# Custom Color Picker Component</h1>
+			<div id="swatch">
+			  <input type="color" id="color" name="color" value="#FF0000">
+			  <div class="info">
+			  </div>
+			</div>
+		</div>
+		<!-- Search Bar Component Ends -->
+	</div>
+	
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/components.js"></script>
+</body>
+</html>

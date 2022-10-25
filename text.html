@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+<body>
+
+<!-- Header Section Starts -->
+<div class="header">
+
+  <!-- Top & Bottom Wrapper Section Starts -->
+  <div class="tb-wrapper inner-shadow">
+    <!-- Logo Navbar and Actions Wrapper Starts -->
+    <div class="lna-wrapper py-1">
+
+      <!-- Logo Section Starts -->
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <!-- Logo Section Ends -->
+
+      <!-- Navbar Section Starts -->
+      <!-- Buttons & Width Height Wrapper Starts -->
+      <div class="bwh-wrapper" style="width: 70%;">
+
+        <!-- Width and Height Fields Starts -->
+        <div class="width-height ml-1 pl-2">
+          <form action="">
+            <img src="img/icon-30.png" alt="" class="mr-1" />
+            <div class="width-height-fields">
+              <label for="">X:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+            <div class="width-height-fields">
+              <label for="">Y:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="width-height ml-1 pl-2">
+          <form action="">
+            <img src="img/icon-31.png" alt="" class="mr-1">
+            <div class="width-height-fields">
+              <label for=""></label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+          </form>
+        </div>
+        <!-- Width and Height Fields Starts -->
+        <!-- Font Families and Font Styles Custom Select Starts -->
+        <div class="custom-select ml-2" style="width:100px;">
+          <select>
+            <option value="0">Poppins</option>
+            <option value="1">Time New Roman</option>
+            <option value="2">Verdana</option>
+            <option value="2">Arial</option>
+            <option value="2">Railway</option>
+            <option value="2">Fancy</option>
+            <option value="2">Cursive</option>
+          </select>
+        </div>
+        <div class="custom-select ml-2" style="width:100px;">
+          <select>
+            <option value="0">Bold</option>
+            <option value="1">Italic</option>
+            <option value="2">Normal</option>
+          </select>
+        </div>
+        <!-- Font Families and Font Styles Custom Select Ends -->
+      </div>
+      <!-- Buttons & Width Height Wrapper Ends -->
+      <!-- Navbar Section Ends -->
+
+      <!-- Actions Section Starts -->
+      <div class="actions width-18">
+        <button><img src="img/chrome-minimize.png" alt="Minimize Icon" /></button>
+        <button><img src="img/window-minimize.png" alt="Minimize Icon" /></button>
+        <button><img src="img/close-icon.png" alt="Close Icon" /></button>
+      </div>
+      <!-- Actions Sections Ends -->
+
+    </div>
+    <!-- Logo Navbar and Actions Wrapper Ends -->
+
+    <!-- Feature Wrapper Section Starts -->
+    <div class="features-wrapper">
+      <!-- Typo Icons Starts -->
+      <div class="typo-btns">
+        <button><img src="img/typo-icon-1.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-2.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-3.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-4.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-5.png" alt="Typo icon" /></button>
+        <button><img src="img/typo-icon-6.png" alt="Typo icon" /></button>
+        <div class="width-height ml-1 pl-2">
+          <form action="">
+            <img src="img/icon-33.png" alt="" class="mr-1" />
+            <div class="width-height-fields">
+              <label for="">Height:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+            <div class="width-height-fields">
+              <label for="">Width:</label>
+              <span class="number-wrapper">
+                <input type="number" />
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="hrs-wrapper ml-1 pl-2">
+          <img src="img/icon-34.png" alt="" class="mr-1" />
+          <div class="range-slider">
+            <input class="range-slider__range" type="range" value="100" min="0" max="500">
+            <span class="range-slider__value">100</span>
+          </div>
+        </div>
+      </div>
+      <!-- Typo Icons Ends -->
+      <!-- Actions Section Starts -->
+      <div class="actions" style="width: 10%;">
+        <button><img src="img/user.png" alt="User Image" /></button>
+      </div>
+      <!-- Actions Sections Ends -->
+    </div>
+    <!-- Feature Wrapper Section Ends -->
+
+  </div>
+  <!-- Top & Bottom Wrapper Ends -->
+
+</div>
+<!-- Header Section Ends -->
+
+<!-- Wrapper Section Starts -->
+<div class="wrapper">
+  <!-- Left Sidebar Section Starts -->
+  <div class="left-sidebar">
+    <div class="project-name">
+      <p>Picture</p>
+    </div>
+    <div class="search-wrapper">
+      <div class="search-bar">
+        <input type="text" class="inner-shadow" placeholder="Search" />
+        <button class="submit-btn"><img src="img/search-icon.png" alt="Search Icon" /></button>
+      </div>
+      <div class="swd-btn-wrapper">
+        <div class="dropdown">
+          <button class="outer-shadow" onclick="showDropdownContent()">
+            <img src="img/caret-down.png" alt="Caret Icon" />
+          </button>
+          <div class="dropdown-content inner-shadow" id="dropdown-content">
+            <button>Move Layer</button>
+            <button>Merge Layer</button>
+            <button>Arrange Layer</button>
+            <button>Selected Layer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Layers Section Starts -->
+    <div class="layers">
+      <div class="layer" style="background-image: url('img/layer-img-3.png');">
+        <button class="accordion">
+          <span>Layer 1:</span>
+          <span><img src="img/icon-23.png" alt="Icon" /></span>
+        </button>
+        <div class="panel">
+          <p>Nightmare</p>
+          <p>Background Remove</p>
+        </div>
+      </div>
+      <div class="layer" style="background-image: url('img/layer-img-3.png');">
+        <button class="accordion">
+          <span>Layer 2:</span>
+          <span>
+              <img src="img/icon-18.png" alt="Icon" />
+              <img src="img/bx_crop.png" alt="Icon" />
+            </span>
+        </button>
+        <div class="panel">
+          <p>Nightmare</p>
+          <p>Background Remove</p>
+        </div>
+      </div>
+      <div class="layer" style="background-image: url('img/layer-img-3.png');">
+        <button class="accordion">
+          <span>Layer 3:</span>
+            <span>
+              <img src="img/icon-23.png" alt="Icon" />
+              <img src="img/icon-16.png" alt="Icon" />
+            </span>
+        </button>
+        <div class="panel">
+          <p>Nightmare</p>
+          <p>Background Remove</p>
+        </div>
+      </div>
+      <div class="layer" style="background-image: url('img/layer-img-3.png');">
+        <button class="accordion">
+          <span>Layer 4:</span>
+          <span>
+            <img src="img/lucide_type.png" alt="Icon" />
+          </span>
+        </button>
+        <div class="panel">
+          <p>Nightmare</p>
+          <p>Background Remove</p>
+        </div>
+      </div>
+      <div class="layer" style="background-image: url('img/layer-img-3.png');">
+        <button class="accordion active">
+          <span>Layer 5:</span>
+            <span>
+              <img src="img/icon-27.png" alt="Icon" />
+              <img src="img/icon-28.png" alt="Icon" />
+            </span>
+        </button>
+        <div class="panel active">
+          <p>Nightmare</p>
+          <p>Background Remove</p>
+        </div>
+      </div>
+    </div>
+    <!-- Layers Section Ends -->
+    <div class="add-layer-btn">
+      <button>+ Add New Layer</button>
+    </div>
+    <div class="total-layers">
+      <p>Total Layers: 5</p>
+    </div>
+  </div>
+  <!-- Left Sidebar Section Ends -->
+  <!-- Main Section Starts -->
+  <div class="main">
+    <div class="project-name">
+      <p>Picture</p>
+    </div>
+    <!-- Editable Image Section Starts -->
+    <div class="editable-img">
+      <img src="img/img-3.png" alt="Image" />
+    </div>
+    <!-- Editable Image Section Ends -->
+    <!-- Main Tool Wrapper Section Starts -->
+    <div class="main-tools-wrapper">
+      
+    </div>
+    <!-- Main Tool Wrapper Section Ends -->
+  </div>
+  <!-- Main Section Ends -->
+  <!-- Right Sidebar Section Starts -->
+  <div class="right-sidebar">
+    <!-- Time & Profile Image Wrapper Starts -->
+    <div class="tpi-wrapper" style="justify-content: flex-end;">
+      <img style="visibility: hidden;" src="img/user.png" alt="User" />
+    </div>
+    <!-- Time & Profile Image Wrapper Ends -->
+    <!-- Toolbar Section Starts -->
+    <div class="toolbar-wrapper">
+      <div class="tools">
+        <!-- Tools Buttons Starts -->
+        <div class="tools-btns">
+          <button><img src="img/icon-5.png" alt="Icon" /></button>
+          <button><img src="img/icon-6.png" alt="Icon" /></button>
+          <button><img src="img/icon-7.png" alt="Icon" /></button>
+          <button><img src="img/icon-8.png" alt="Icon" /></button>
+          <button><img src="img/icon-9.png" alt="Icon" /></button>
+          <button><img src="img/icon-11.png" alt="Icon" /></button>
+          <button><img src="img/icon-10.png" alt="Icon" /></button>
+          <button><img src="img/icon-12.png" alt="Icon" /></button>
+          <button><img src="img/icon-13.png" alt="Icon" /></button>
+          <button><img src="img/icon-14.png" alt="Icon" /></button>
+          <button><img src="img/icon-15.png" alt="Icon" /></button>
+          <button><img src="img/icon-16.png" alt="Icon" /></button>
+          <button><img src="img/icon-17.png" alt="Icon" /></button>
+          <button><img src="img/icon-18.png" alt="Icon" /></button>
+          <button><img src="img/icon-19.png" alt="Icon" /></button>
+          <button><img src="img/icon-20.png" alt="Icon" /></button>
+          <button><img src="img/icon-21.png" alt="Icon" /></button>
+          <button><img src="img/icon-22.png" alt="Icon" /></button>
+          <button><img src="img/icon-23.png" alt="Icon" /></button>
+          <button><img src="img/icon-24.png" alt="Icon" /></button>
+          <button><img src="img/icon-25.png" alt="Icon" /></button>
+          <button><img src="img/icon-26.png" alt="Icon" /></button>
+        </div>
+        <!-- Tools Buttons Ends -->
+      </div>
+      <!-- Export Button Starts -->
+      <div class="export-btn">
+        <button>Export</button>
+      </div>
+      <!-- Export Button Ends -->
+      <!-- Modes Starts -->
+      <div class="modes">
+        <div class="heading">
+          <p>Modes</p>
+        </div>
+        <div class="modes-btns">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            <img class="lock-icon" src="img/lock-icon.png" alt="Lock Icon" />
+          </label>
+        </div>
+      </div>
+      <!-- Modes Ends -->
+    </div>
+    <!-- Toolbar Section Ends -->
+  </div>
+  <!-- Right Sidebar Section Ends -->
+</div>
+<!-- Wrapper Section Ends -->
+
+	<script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</head>

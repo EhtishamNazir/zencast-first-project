@@ -9,96 +9,68 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
 <body>
 
-<!-- Header Section Starts -->
-<div class="header">
-
-  <!-- Top & Bottom Wrapper Section Starts -->
-  <div class="tb-wrapper">
-    <!-- Logo Navbar and Actions Wrapper Starts -->
-    <div class="lna-wrapper">
-
-      <!-- Logo Section Starts -->
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo" />
-      </div>
-      <!-- Logo Section Ends -->
-
-      <!-- Navbar Section Starts -->
+  <!-- Header Section Starts -->
+  <div class="header-wrapper">
+    <div class="header inner-shadow">
       <div class="navbar">
-        <div class="navbar-btns">
-          <button>File</button>
-          <button>Edit</button>
-          <button>Image</button>
-          <button>Layer</button>
-          <button>Select</button>
-          <button>Filter</button>
-          <button>3D</button>
-          <button>View</button>
-          <button>Window</button>
-          <button>Help</button>
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-links-wrapper">
+          <ul class="navbar-links">
+            <li><a href="#">file</a></li>
+            <li><a href="#">edit</a></li>
+            <li><a href="#">image</a></li>
+            <li><a href="#">layer</a></li>
+            <li><a href="#">select</a></li>
+            <li><a href="#">filter</a></li>
+            <li><a href="#">view</a></li>
+            <li><a href="#">window</a></li>
+            <li><a href="#">help</a></li>
+          </ul>
+        </div>
+        <div class="action-btns-wrapper">
+          <div class="action-btns">
+            <button><img src="img/chrome-minimize.png" alt="Minimize Icon" /></button>
+            <button><img src="img/window-minimize.png" alt="Window Minimize Icon" /></button>
+            <button><img src="img/close-icon.png" alt="Close Icon" /></button>
+          </div>
         </div>
       </div>
-      <!-- Navbar Section Ends -->
-
-      <!-- Actions Section Starts -->
-      <div class="actions">
-        <button><img src="img/chrome-minimize.png" alt="Minimize Icon" /></button>
-        <button><img src="img/window-minimize.png" alt="Minimize Icon" /></button>
-        <button><img src="img/close-icon.png" alt="Close Icon" /></button>
-      </div>
-      <!-- Actions Sections Ends -->
-
-    </div>
-    <!-- Logo Navbar and Actions Wrapper Ends -->
-
-    <!-- Feature Wrapper Section Starts -->
-    <div class="features-wrapper">
-      
-      <!-- Empty Space Starts -->
-      <div class="empty-space"></div>
-      <!-- Empty Space Ends -->
-
-      <!-- Features Section Starts -->
-      <div class="features">
-
-        <!-- Buttons & Width Height Wrapper Starts -->
-        <div class="bwh-wrapper">
-          <!-- Buttons Starts-->
-          <div class="btns">
-            <button><img src="img/icon-1.png" alt="Icon" /></button>
-            <button><img src="img/icon-2.png" alt="Icon" /></button>
-            <button><img src="img/icon-3.png" alt="Icon" /></button>
-            <button><img src="img/icon-4.png" alt="Icon" /></button>
+      <div class="tools-subtools">
+        <div class="empty-space"></div>
+        <div class="subtools-wrapper">
+          <div class="subtools">
+            <button><img src="img/icon-1.png" alt="Icon 1" /></button>
+            <button><img src="img/icon-2.png" alt="Icon 2" /></button>
+            <button><img src="img/icon-3.png" alt="Icon 3" /></button>
+            <button><img src="img/icon-4.png" alt="Icon 4" /></button>
           </div>
-          <!-- Buttons Ends-->
-
-          <!-- Width and Height Fields Starts -->
-          <div class="width-height">
-            <form action="">
-              <div class="width-height-fields">
-                <label for="">Width:</label>
-                <span class="number-wrapper">
-                  <input type="number" />
-                </span>
-              </div>
-              <div class="width-height-fields">
-                <label for="">Height:</label>
-                <span class="number-wrapper">
-                  <input type="number" />
-                </span>
-              </div>
-            </form>
+          <div class="divider ml-1">
+            <div class="width-height pl-3">
+              <form action="">
+                <div class="width-height-fields">
+                  <label for="">Width:</label>
+                  <span class="number-wrapper">
+                    <input type="number" />
+                  </span>
+                </div>
+                <div class="width-height-fields">
+                  <label for="">Height:</label>
+                  <span class="number-wrapper">
+                    <input type="number" />
+                  </span>
+                </div>
+              </form>
+            </div>
           </div>
-          <!-- Width and Height Fields Starts -->
+          <div class="divider ml-1"></div>
         </div>
-        <!-- Buttons & Width Height Wrapper Ends -->
-
-        <!-- Essential Section Starts -->
-        <div class="essential-wrapper">
-          <div class="custom-select" style="width:100px;">
+        <div class="subtools-action-btns-wrapper">
+          <div class="custom-select">
             <select>
               <option value="0">Essential</option>
               <option value="1">1</option>
@@ -106,226 +78,224 @@
             </select>
           </div>
         </div>
-        <!-- Essemtial Section Ends -->
-
       </div>
-      <!-- Features Section Ends -->
-
     </div>
-    <!-- Feature Wrapper Section Ends -->
-
   </div>
-  <!-- Top & Bottom Wrapper Ends -->
+  <!-- Header Section Ends -->
 
-</div>
-<!-- Header Section Ends -->
-
-<!-- Wrapper Section Starts -->
-<div class="wrapper">
-  <!-- Left Sidebar Section Starts -->
-  <div class="left-sidebar">
-    <div class="project-name">
-      <p>Picture</p>
-    </div>
-    <div class="search-wrapper">
-      <div class="search">
-        <input type="text" placeholder="Search" />
-        <button class="submit-btn"><img src="img/search-icon.png" alt="Search Icon" /></button>
+  <!-- Main Wrapper Section Starts -->
+  <div class="main-wrapper">
+    <!-- Left Sidebar Section Starts -->
+    <div class="left-sidebar">
+      <div class="left-sidebar-header">
+        <h1 class="project-name">picture</h1>
       </div>
-      <div class="btn">
-        <button onclick="showContent1()"><img src="img/caret-down.png" alt="Caret Icon" /></button>
-        <div class="content" id="dropdown-content-1">
-          <button>Move Layer</button>
-          <button>Merge Layer</button>
-          <button>Arrange Layer</button>
-          <button>Selected Layer</button>
+      <div class="search-wrapper">
+        <div class="search-bar">
+          <input type="text" class="inner-shadow" placeholder="Search" />
+          <button class="submit-btn"><img src="img/search-icon.png" alt="Search Icon" /></button>
+        </div>
+        <div class="swd-btn-wrapper">
+          <div class="dropdown">
+            <button class="outer-shadow" onclick="showDropdownContent()">
+              <img src="img/caret-down.png" alt="Caret Icon" />
+            </button>
+            <div class="dropdown-content inner-shadow" id="dropdown-content">
+              <button>Move Layer</button>
+              <button>Merge Layer</button>
+              <button>Arrange Layer</button>
+              <button>Selected Layer</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Layers Section Starts -->
-    <div class="layers">
-      <div class="layer-1 layer">
-        <div class="layer-btn">
-          <button>
+      <!-- Layers Section Starts -->
+      <div class="layers-wrapper">
+        <div class="layer" style="background-image: url('img/filter-img-1.png');">
+          <button class="accordion">
             <span>Layer 1:</span>
             <span><img src="img/icon-23.png" alt="Icon" /></span>
           </button>
+          <div class="panel">
+            <p>Nightmare</p>
+            <p>Background Remove</p>
+          </div>
         </div>
-        <div class="layer-body">
-          <p>Nightmare</p>
-          <p>Background Remove</p>
-        </div>
-      </div>
-      <div class="layer-2 layer">
-        <div class="layer-btn">
-          <button>
+        <div class="layer" style="background-image: url('img/filter-img-1.png');">
+          <button class="accordion">
             <span>Layer 2:</span>
             <span>
-              <img src="img/icon-18.png" alt="Icon" />
-              <img src="img/bx_crop.png" alt="Icon" />
-            </span>
+                <img src="img/icon-18.png" alt="Icon" />
+                <img src="img/bx_crop.png" alt="Icon" />
+              </span>
           </button>
+          <div class="panel">
+            <p>Nightmare</p>
+            <p>Background Remove</p>
+          </div>
         </div>
-        <div class="layer-body">
-          <p>Nightmare</p>
-          <p>Background Remove</p>
-        </div>
-      </div>
-      <div class="layer-3 layer">
-        <div class="layer-btn">
-          <button>
+        <div class="layer" style="background-image: url('img/filter-img-1.png');">
+          <button class="accordion">
             <span>Layer 3:</span>
-            <span>
-              <img src="img/icon-23.png" alt="Icon" />
-              <img src="img/icon-16.png" alt="Icon" />
-            </span>
-          </button></div>
-        <div class="layer-body">
-          <p>Nightmare</p>
-          <p>Background Remove</p>
+              <span>
+                <img src="img/icon-24-2.png" alt="Icon" />
+                <img src="img/icon-16.png" alt="Icon" />
+              </span>
+          </button>
+          <div class="panel">
+            <p>Nightmare</p>
+            <p>Background Remove</p>
+          </div>
         </div>
-      </div>
-      <div class="layer-4 layer">
-        <div class="layer-btn">
-          <button>
+        <div class="layer" style="background-image: url('img/filter-img-1.png');">
+          <button class="accordion">
             <span>Layer 4:</span>
             <span>
               <img src="img/lucide_type.png" alt="Icon" />
             </span>
           </button>
+          <div class="panel">
+            <p>Nightmare</p>
+            <p>Background Remove</p>
+          </div>
         </div>
-        <div class="layer-body">
-          <p>Nightmare</p>
-          <p>Background Remove</p>
-        </div>
-      </div>
-      <div class="layer-5 layer">
-        <div class="layer-btn">
-          <button>
+        <div class="layer" style="background-image: url('img/filter-img-1.png');">
+          <button class="accordion active">
             <span>Layer 5:</span>
-            <span>
-              <img src="img/icon-27.png" alt="Icon" />
-              <img src="img/icon-28.png" alt="Icon" />
-            </span>
+              <span>
+                <img src="img/icon-27.png" alt="Icon" />
+                <img src="img/icon-28.png" alt="Icon" />
+              </span>
           </button>
+          <div class="panel active">
+            <p>Nightmare</p>
+            <p>Background Remove</p>
+          </div>
         </div>
-        <div class="layer-body">
-          <p>Nightmare</p>
-          <p>Background Remove</p>
+      </div>
+      <!-- Layers Section Ends -->
+      <div class="add-layer-btn">
+        <button>+ Add New Layer</button>
+      </div>
+      <div class="total-layers">
+        <p>Total Layers: 5</p>
+      </div>
+    </div>
+    <!-- Left Sidebar Section Ends -->
+
+    <!-- Working Area Section Starts -->
+    <div class="working-area">
+      <div class="project-title">
+        <p>Picture</p>
+      </div>
+      <!-- Editable Image Section Starts -->
+      <div class="working-area-img-wrapper">
+        <img src="img/img-1.png" alt="Image" />
+      </div>
+      <!-- Editable Image Section Ends -->
+
+      <div class="working-area-tools-wrapper">
+        <div class="most-used-tools">
+          <div class="heading">
+            <p>Most Used Tools</p>
+          </div>
+          <div class="tools-btns-wrapper inner-shadow">
+            <div class="tools-btns-wrapper-item">
+              <button><img src="img/icon-5.png" alt="Cursor Icon"></button>
+              <button><img src="img/bx_crop.png" alt="Icon"></button>
+              <button><img src="img/clarity_color-picker-solid.png" alt="Cursor Icon"></button>
+            </div>
+            <div class="tools-btns-wrapper-item">
+              <button><img src="img/lucide_type.png" alt="Icon"></button>
+              <button><img src="img/mdi_lasso.png" alt="Icon"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Layers Section Ends -->
-    <div class="add-layer-btn">
-      <button>+ Add New Layer</button>
-    </div>
-    <div class="total-layers">
-      <p>Total Layers: 5</p>
-    </div>
-  </div>
-  <!-- Left Sidebar Section Ends -->
-  <!-- Main Section Starts -->
-  <div class="main">
-    <div class="project-name">
-      <p>Picture</p>
-    </div>
-    <!-- Editable Image Section Starts -->
-    <div class="editable-img">
-      <img src="img/img-1.png" alt="Image" />
-    </div>
-    <!-- Editable Image Section Ends -->
-    <!-- Main Tool Wrapper Section Starts -->
-    <div class="main-tools-wrapper">
-      <div class="most-used-tools">
-        <div class="heading">
-          <p>Most Used Tools</p>
-        </div>
-        <div class="tools-wrapper">
-          <button><img src="img/icon-5.png" alt="Cursor Icon"></button>
-          <button><img src="img/bx_crop.png" alt="Icon"></button>
-          <button><img src="img/clarity_color-picker-solid.png" alt="Cursor Icon"></button>
-          <button><img src="img/lucide_type.png" alt="Icon"></button>
-          <button><img src="img/mdi_lasso.png" alt="Icon"></button>
+    <!-- Working Section Starts -->
+
+    <!-- Right Sidebar Section Starts -->
+    <div class="right-sidebar">
+      <div class="right-sidebar-header">
+        <button><img src="img/bi_clock-history.png" alt="Clock Icon" /></button>
+        <button><img src="img/cog.png" alt="Setting Icon" /></button>
+        <button><img src="img/user.png" alt="User Image" /></button>
+      </div>
+      <div class="toolbar-wrapper">
+        <div class="tools inner-shadow">
+          <div class="tools-header">
+            <button><img src="img/plus.png" alt="Plus Icon" /></button>
+            <button><img src="img/cog.png" alt="Setting Icon" /></button>
+          </div>
+          <div class="tools-body">
+            <div class="tools-body-item">
+              <button><img src="img/icon-5.png" alt="Icon" /></button>
+              <button><img src="img/icon-6.png" alt="Icon" /></button>
+              <button><img src="img/icon-7.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-8.png" alt="Icon" /></button>
+              <button><img src="img/icon-9.png" alt="Icon" /></button>
+              <button><img src="img/icon-11.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-10.png" alt="Icon" /></button>
+              <button><img src="img/icon-12.png" alt="Icon" /></button>
+              <button><img src="img/icon-13.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-14.png" alt="Icon" /></button>
+              <button><img src="img/icon-15.png" alt="Icon" /></button>
+              <button><img src="img/icon-16.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-17.png" alt="Icon" /></button>
+              <button><img src="img/icon-18.png" alt="Icon" /></button>
+              <button><img src="img/icon-19.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-20.png" alt="Icon" /></button>
+              <button><img src="img/icon-21.png" alt="Icon" /></button>
+              <button><img src="img/icon-22.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-23.png" alt="Icon" /></button>
+              <button class="active">
+                <img src="img/icon-24.png" class="light-icon" alt="Icon" />
+                <img src="img/icon-24-2.png" class="dark-icon" alt="Icon" />
+              </button>
+              <button><img src="img/icon-25.png" alt="Icon" /></button>
+            </div>
+            <div class="tools-body-item">
+              <button><img src="img/icon-26.png" alt="Icon" /></button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Main Tool Wrapper Section Ends -->
-  </div>
-  <!-- Main Section Ends -->
-  <!-- Right Sidebar Section Starts -->
-  <div class="right-sidebar">
-    <!-- Time & Profile Image Wrapper Starts -->
-    <div class="tpi-wrapper">
-      <img src="img/bi_clock-history.png" alt="Clock" />
-      <img src="img/user.png" alt="User" />
-    </div>
-    <!-- Time & Profile Image Wrapper Ends -->
-    <!-- Toolbar Section Starts -->
-    <div class="toolbar-wrapper">
-      <div class="tools">
-        <!-- Tools Header Starts -->
-        <div class="tools-header">
-          <button><img src="img/plus.png" alt="Icon" /></button>
-          <button><img src="img/cog.png" alt="Icon" /></button>
-        </div>
-        <!-- Tools Header Ends -->
-        <!-- Tools Buttons Starts -->
-        <div class="tools-btns">
-          <button><img src="img/icon-5.png" alt="Icon" /></button>
-          <button><img src="img/icon-6.png" alt="Icon" /></button>
-          <button><img src="img/icon-7.png" alt="Icon" /></button>
-          <button><img src="img/icon-8.png" alt="Icon" /></button>
-          <button><img src="img/icon-9.png" alt="Icon" /></button>
-          <button><img src="img/icon-11.png" alt="Icon" /></button>
-          <button><img src="img/icon-10.png" alt="Icon" /></button>
-          <button><img src="img/icon-12.png" alt="Icon" /></button>
-          <button><img src="img/icon-13.png" alt="Icon" /></button>
-          <button><img src="img/icon-14.png" alt="Icon" /></button>
-          <button><img src="img/icon-15.png" alt="Icon" /></button>
-          <button><img src="img/icon-16.png" alt="Icon" /></button>
-          <button><img src="img/icon-17.png" alt="Icon" /></button>
-          <button><img src="img/icon-18.png" alt="Icon" /></button>
-          <button><img src="img/icon-19.png" alt="Icon" /></button>
-          <button><img src="img/icon-20.png" alt="Icon" /></button>
-          <button><img src="img/icon-21.png" alt="Icon" /></button>
-          <button><img src="img/icon-22.png" alt="Icon" /></button>
-          <button><img src="img/icon-23.png" alt="Icon" /></button>
-          <button><img src="img/icon-24.png" alt="Icon" /></button>
-          <button><img src="img/icon-25.png" alt="Icon" /></button>
-          <button><img src="img/icon-26.png" alt="Icon" /></button>
-        </div>
-        <!-- Tools Buttons Ends -->
+      <div class="export-btn-wrapper">
+        <button>export</button>
       </div>
-      <!-- Export Button Starts -->
-      <div class="export-btn">
-        <button>Export</button>
-      </div>
-      <!-- Export Button Ends -->
-      <!-- Modes Starts -->
-      <div class="modes">
-        <div class="heading">
-          <p>Modes</p>
+      <div class="modes-wrapper">
+        <div class="modes-heading">
+          <h4>modes</h4>
         </div>
-        <div class="modes-btns">
-          <label class="modes-btns-wrapper">Simple
+        <div class="modes-btns-wrapper">
+          <label class="radio-btns-wrapper">Simple
             <input type="radio" checked="checked" name="radio">
             <span class="checkmark"></span>
           </label>
-          <label class="modes-btns-wrapper">Advanced
+          <label class="radio-btns-wrapper">Advanced
             <input type="radio" name="radio">
             <span class="checkmark"></span>
           </label>
         </div>
       </div>
-      <!-- Modes Ends -->
     </div>
-    <!-- Toolbar Section Ends -->
+    <!-- Right Sidebar Section Ends -->
   </div>
-  <!-- Right Sidebar Section Ends -->
-</div>
-<!-- Wrapper Section Ends -->
+  <!-- Main Wrapper Section Ends -->
 
-<!-- Create New Modal Starts -->
 <!-- The Modal -->
 <div id="create-new" class="modal">
 
@@ -443,31 +413,7 @@
 
 	<script src="js/main.js"></script>
   <script>
-    // Get the modal
-    var modal = document.getElementById("create-new");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+    
   </script>
 </body>
 </head>

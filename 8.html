@@ -8,82 +8,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
   <style>
-    .wrapper .right-sidebar .toolbar-wrapper{
+    .main-wrapper .right-sidebar .toolbar-wrapper{
       display: flex;
-      flex-wrap: wrap;
       justify-content: flex-end;
+    }
+    .main-wrapper .right-sidebar .toolbar-wrapper .tools{
+      width: fit-content;
+    }
+    .main-wrapper .right-sidebar .toolbar-wrapper .tools .tools-body{
+      padding: 10px;
+    }
+    .main-wrapper .right-sidebar .toolbar-wrapper .tools .tools-body .tools-body-item{
+      padding: 25px 0;
+      flex-direction: column;
+    }
+    .main-wrapper .right-sidebar .toolbar-wrapper .tools .tools-body .tools-body-item button:not(:last-child){
+      margin-bottom: 20px;
     }
   </style>
 <body>
 
 <!-- Header Section Starts -->
-<div class="header">
-
-  <!-- Top & Bottom Wrapper Section Starts -->
-  <div class="tb-wrapper">
-    <!-- Logo Navbar and Actions Wrapper Starts -->
-    <div class="lna-wrapper">
-
-      <!-- Logo Section Starts -->
+<div class="header-wrapper">
+  <div class="header inner-shadow">
+    <div class="navbar">
       <div class="logo">
         <img src="img/logo.png" alt="Logo" />
       </div>
-      <!-- Logo Section Ends -->
-
-      <!-- Navbar Section Starts -->
-      <div class="navbar">
-        <div class="navbar-btns">
-          <button>File</button>
-          <button>Edit</button>
-          <button>Image</button>
-          <button>Layer</button>
-          <button>Select</button>
-          <button>Filter</button>
-          <button>3D</button>
-          <button>View</button>
-          <button>Window</button>
-          <button>Help</button>
+      <div class="navbar-links-wrapper">
+        <ul class="navbar-links">
+          <li><a href="#">file</a></li>
+          <li><a href="#">edit</a></li>
+          <li><a href="#">image</a></li>
+          <li><a href="#">layer</a></li>
+          <li><a href="#">select</a></li>
+          <li><a href="#">filter</a></li>
+          <li><a href="#">view</a></li>
+          <li><a href="#">window</a></li>
+          <li><a href="#">help</a></li>
+        </ul>
+      </div>
+      <div class="action-btns-wrapper">
+        <div class="action-btns">
+          <button><img src="img/chrome-minimize.png" alt="Minimize Icon" /></button>
+          <button><img src="img/window-minimize.png" alt="Window Minimize Icon" /></button>
+          <button><img src="img/close-icon.png" alt="Close Icon" /></button>
         </div>
       </div>
-      <!-- Navbar Section Ends -->
-
-      <!-- Actions Section Starts -->
-      <div class="actions">
-        <button><img src="img/chrome-minimize.png" alt="Minimize Icon" /></button>
-        <button><img src="img/window-minimize.png" alt="Minimize Icon" /></button>
-        <button><img src="img/close-icon.png" alt="Close Icon" /></button>
-      </div>
-      <!-- Actions Sections Ends -->
-
     </div>
-    <!-- Logo Navbar and Actions Wrapper Ends -->
-
-    <!-- Feature Wrapper Section Starts -->
-    <div class="features-wrapper">
-      
-      <!-- Empty Space Starts -->
+    <div class="tools-subtools">
       <div class="empty-space"></div>
-      <!-- Empty Space Ends -->
-
-      <!-- Features Section Starts -->
-      <div class="features">
-
-        <!-- Buttons & Width Height Wrapper Starts -->
-        <div class="bwh-wrapper">
-          <!-- Buttons Starts-->
-          <div class="btns">
-            <button><img src="img/icon-1.png" alt="Icon" /></button>
-            <button><img src="img/icon-2.png" alt="Icon" /></button>
-            <button><img src="img/icon-3.png" alt="Icon" /></button>
-            <button><img src="img/icon-4.png" alt="Icon" /></button>
-          </div>
-          <!-- Buttons Ends-->
-
-          <!-- Width and Height Fields Starts -->
-          <div class="width-height">
+      <div class="subtools-wrapper">
+        <div class="subtools">
+          <button><img src="img/icon-1.png" alt="Icon 1" /></button>
+          <button><img src="img/icon-2.png" alt="Icon 2" /></button>
+          <button><img src="img/icon-3.png" alt="Icon 3" /></button>
+          <button><img src="img/icon-4.png" alt="Icon 4" /></button>
+        </div>
+        <div class="divider ml-1">
+          <div class="width-height pl-3">
             <form action="">
               <div class="width-height-fields">
                 <label for="">Width:</label>
@@ -99,124 +87,108 @@
               </div>
             </form>
           </div>
-          <!-- Width and Height Fields Starts -->
         </div>
-        <!-- Buttons & Width Height Wrapper Ends -->
-
-        <!-- Essential Section Starts -->
-        <div class="essential-wrapper">
-          <div class="custom-select" style="width:100px;">
-            <select>
-              <option value="0">Essential</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-            </select>
-          </div>
-        </div>
-        <!-- Essemtial Section Ends -->
-
+        <div class="divider ml-1"></div>
       </div>
-      <!-- Features Section Ends -->
-
+      <div class="subtools-action-btns-wrapper">
+        <div class="custom-select">
+          <select>
+            <option value="0">Essential</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
     </div>
-    <!-- Feature Wrapper Section Ends -->
-
   </div>
-  <!-- Top & Bottom Wrapper Ends -->
-
 </div>
 <!-- Header Section Ends -->
 
-<!-- Wrapper Section Starts -->
-<div class="wrapper">
+<!-- Main Wrapper Section Starts -->
+<div class="main-wrapper">
   <!-- Left Sidebar Section Starts -->
   <div class="left-sidebar">
-    <div class="project-name">
-      <p>Picture</p>
+    <div class="left-sidebar-header">
+      <h1 class="project-name">picture</h1>
     </div>
     <div class="search-wrapper">
-      <div class="search">
-        <input type="text" placeholder="Search" />
+      <div class="search-bar">
+        <input type="text" class="inner-shadow" placeholder="Search" />
         <button class="submit-btn"><img src="img/search-icon.png" alt="Search Icon" /></button>
       </div>
-      <div class="btn">
-        <button onclick="showContent1()"><img src="img/caret-down.png" alt="Caret Icon" /></button>
-        <div class="content" id="dropdown-content-1">
-          <button>Move Layer</button>
-          <button>Merge Layer</button>
-          <button>Arrange Layer</button>
-          <button>Selected Layer</button>
+      <div class="swd-btn-wrapper">
+        <div class="dropdown">
+          <button class="outer-shadow" onclick="showDropdownContent()">
+            <img src="img/caret-down.png" alt="Caret Icon" />
+          </button>
+          <div class="dropdown-content inner-shadow" id="dropdown-content">
+            <button>Move Layer</button>
+            <button>Merge Layer</button>
+            <button>Arrange Layer</button>
+            <button>Selected Layer</button>
+          </div>
         </div>
       </div>
     </div>
     <!-- Layers Section Starts -->
-    <div class="layers">
-      <div class="layer-1 layer">
-        <div class="layer-btn">
-          <button>
-            <span>Layer 1:</span>
-            <span><img src="img/icon-23.png" alt="Icon" /></span>
-          </button>
-        </div>
-        <div class="layer-body">
+    <div class="layers-wrapper">
+      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+        <button class="accordion">
+          <span>Layer 1:</span>
+          <span><img src="img/icon-23.png" alt="Icon" /></span>
+        </button>
+        <div class="panel">
           <p>Nightmare</p>
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer-2 layer">
-        <div class="layer-btn">
-          <button>
-            <span>Layer 2:</span>
-            <span>
+      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+        <button class="accordion">
+          <span>Layer 2:</span>
+          <span>
               <img src="img/icon-18.png" alt="Icon" />
               <img src="img/bx_crop.png" alt="Icon" />
             </span>
-          </button>
-        </div>
-        <div class="layer-body">
+        </button>
+        <div class="panel">
           <p>Nightmare</p>
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer-3 layer">
-        <div class="layer-btn">
-          <button>
-            <span>Layer 3:</span>
+      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+        <button class="accordion">
+          <span>Layer 3:</span>
             <span>
-              <img src="img/icon-23.png" alt="Icon" />
+              <img src="img/icon-24-2.png" alt="Icon" />
               <img src="img/icon-16.png" alt="Icon" />
             </span>
-          </button></div>
-        <div class="layer-body">
+        </button>
+        <div class="panel">
           <p>Nightmare</p>
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer-4 layer">
-        <div class="layer-btn">
-          <button>
-            <span>Layer 4:</span>
-            <span>
-              <img src="img/lucide_type.png" alt="Icon" />
-            </span>
-          </button>
-        </div>
-        <div class="layer-body">
+      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+        <button class="accordion">
+          <span>Layer 4:</span>
+          <span>
+            <img src="img/lucide_type.png" alt="Icon" />
+          </span>
+        </button>
+        <div class="panel">
           <p>Nightmare</p>
           <p>Background Remove</p>
         </div>
       </div>
-      <div class="layer-5 layer">
-        <div class="layer-btn">
-          <button>
-            <span>Layer 5:</span>
+      <div class="layer" style="background-image: url('img/filter-img-1.png');">
+        <button class="accordion active">
+          <span>Layer 5:</span>
             <span>
               <img src="img/icon-27.png" alt="Icon" />
               <img src="img/icon-28.png" alt="Icon" />
             </span>
-          </button>
-        </div>
-        <div class="layer-body">
+        </button>
+        <div class="panel active">
           <p>Nightmare</p>
           <p>Background Remove</p>
         </div>
@@ -231,76 +203,108 @@
     </div>
   </div>
   <!-- Left Sidebar Section Ends -->
-  <!-- Main Section Starts -->
-  <div class="main">
-    <div class="project-name">
+
+  <!-- Working Area Section Starts -->
+  <div class="working-area">
+    <div class="project-title">
       <p>Picture</p>
     </div>
     <!-- Editable Image Section Starts -->
-    <div class="editable-img">
+    <div class="working-area-img-wrapper">
       <img src="img/img-1.png" alt="Image" />
     </div>
     <!-- Editable Image Section Ends -->
-    <!-- Main Tool Wrapper Section Starts -->
-    <div class="main-tools-wrapper">
 
+    <!-- Working Area Tools Wrapper Starts -->
+    <div class="working-area-tools-wrapper">
+      <div class="adjustments">
+        <div class="heading">
+          <p>Adjustments</p>
+        </div>
+        <div class="adjustments-wrapper">
+          <div class="adjustment-items">
+            <div class="adjustment-item">
+              <p>Brightness: </p>
+              <div class="range-slider">
+                <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                <span class="range-slider__value">100</span>
+              </div>
+            </div>
+            <div class="adjustment-item">
+              <p>Sharpness: </p>
+              <div class="range-slider">
+                <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                <span class="range-slider__value">100</span>
+              </div>
+            </div>
+            <div class="adjustment-item">
+              <p>Light: </p>
+              <div class="range-slider">
+                <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                <span class="range-slider__value">100</span>
+              </div>
+            </div>
+          </div>
+          <div class="rotation-btn">
+            <div class="custom-select">
+              <select>
+                <option value="0">Rotate</option>
+                <option value="0">Rotate</option>
+                <option value="1">Mode 1</option>
+                <option value="2">Mode 2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Main Tool Wrapper Section Ends -->
+    <!-- Working Area Tools Wrapper Ends -->
   </div>
-  <!-- Main Section Ends -->
+  <!-- Working Section Starts -->
+
   <!-- Right Sidebar Section Starts -->
   <div class="right-sidebar">
-    <!-- Time & Profile Image Wrapper Starts -->
-    <div class="tpi-wrapper">
-      <img src="img/bi_clock-history.png" alt="Clock" />
-      <img src="img/cog.png" alt="Icon" />
-      <img src="img/user.png" alt="User" />
+    <div class="right-sidebar-header">
+      <button><img src="img/bi_clock-history.png" alt="Clock Icon" /></button>
+      <button><img src="img/cog.png" alt="Setting Icon" /></button>
+      <button><img src="img/user.png" alt="User Image" /></button>
     </div>
-    <!-- Time & Profile Image Wrapper Ends -->
-    <!-- Toolbar Section Starts -->
     <div class="toolbar-wrapper">
-      <div class="tools-2">
-        <!-- Tools Buttons Starts -->
-        <div class="tools-btns">
-          <button><img src="img/icon-11.png" alt="Icon" /></button>
-          <button><img src="img/icon-19.png" alt="Icon" /></button>
-          <button><img src="img/icon-26.png" alt="Icon" /></button>
-          <button><img src="img/icon-29.png" alt="Icon" /></button>
-        </div>
-        <!-- Tools Buttons Ends -->
-      </div>
-      <!-- Export Button Starts -->
-      <div class="export-btn">
-        <button>Export</button>
-      </div>
-      <!-- Export Button Ends -->
-      <!-- Modes Starts -->
-      <div class="modes">
-        <div class="heading">
-          <p>Modes</p>
-        </div>
-        <div class="modes-btns">
-          <label class="modes-btns-wrapper">Simple
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="modes-btns-wrapper">Advanced
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
+      <div class="tools inner-shadow">
+        <div class="tools-body">
+          <div class="tools-body-item">
+            <button><img src="img/icon-11.png" alt="Icon" /></button>
+            <button><img src="img/icon-26.png" alt="Icon" /></button>
+            <button><img src="img/icon-19.png" alt="Icon" /></button>
+            <button><img src="img/icon-29.png" alt="Icon" /></button>
+          </div>
         </div>
       </div>
-      <!-- Modes Ends -->
     </div>
-    <!-- Toolbar Section Ends -->
+    <div class="export-btn-wrapper">
+      <button>export</button>
+    </div>
+    <div class="modes-wrapper">
+      <div class="modes-heading">
+        <h4>modes</h4>
+      </div>
+      <div class="modes-btns-wrapper">
+        <label class="radio-btns-wrapper">Simple
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio-btns-wrapper">Advanced
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
   </div>
   <!-- Right Sidebar Section Ends -->
 </div>
-<!-- Wrapper Section Ends -->
+<!-- Main Wrapper Section Ends -->
 
-	<script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  
+  <script src="js/main.js"></script>
 </body>
 </head>
